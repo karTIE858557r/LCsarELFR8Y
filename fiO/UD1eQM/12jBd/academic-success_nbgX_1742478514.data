@@ -1,6 +1,0 @@
-FROM golang:latest
-ENV WORKDIR /app
-ENV GOROOT /usr/local/go
-WORKDIR $WORKDIR
-RUN make deps
-VOLUME ["/app/bin"]
