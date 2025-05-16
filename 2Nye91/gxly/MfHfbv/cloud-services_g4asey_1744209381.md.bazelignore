@@ -2,6 +2,5 @@
 api
 examples/grpc-bridge/script
 mobile
-tools/dev/src
 .project
 envoy-filter-example
