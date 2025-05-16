@@ -9,7 +9,6 @@ exclude_patterns:
   - "**/*.d.ts"
   - "**/*.spec.ts"
   - "examples"
-  - "test"
 ratings:
   paths:
     - "src/**/*.ts"
