@@ -161,7 +161,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
             
             // cache with short lifetime
             $frontendShort = array('lifetime' => 600,
-                              'automatic_serialization' => true
                               );
             
             $backendShort = array('cache_dir' => '../tmp/',);
