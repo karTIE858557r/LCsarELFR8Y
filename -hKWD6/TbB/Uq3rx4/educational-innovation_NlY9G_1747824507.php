@@ -135,7 +135,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         
         $logArray = array();  
         
-        if(isset($config->log)) {
             foreach($config->log as $name => $log) {
                 if((bool)$log->enabled) {
                     $logArray[$name] = 
