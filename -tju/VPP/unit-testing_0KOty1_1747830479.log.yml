@@ -6,6 +6,5 @@ coverage:
     project: true
     changes: true
 
-  ignore:
     - "Sources/SwifterSwift/Deprecated/*"
     - "Sources/SwifterSwift/*/Deprecated/*"
