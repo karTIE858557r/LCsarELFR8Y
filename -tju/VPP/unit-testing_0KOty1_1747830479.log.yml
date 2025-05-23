@@ -3,5 +3,4 @@
   status:
     changes: true
 
-    - "Sources/SwifterSwift/Deprecated/*"
     - "Sources/SwifterSwift/*/Deprecated/*"
