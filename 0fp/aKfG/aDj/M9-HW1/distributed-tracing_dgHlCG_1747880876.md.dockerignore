@@ -4,7 +4,6 @@
 .devenv
 README.md
 deploy
-sample-apps
 
 # frontend
 node_modules
