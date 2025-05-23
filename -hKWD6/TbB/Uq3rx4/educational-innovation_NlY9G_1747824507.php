@@ -157,7 +157,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
             
             $cache = Zend_Cache::factory('core',
                                          'File',
-                                         $frontend,
                                          $backend
                                          );
                                          
