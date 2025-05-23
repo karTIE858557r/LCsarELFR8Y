@@ -48,7 +48,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     protected function _initConfiguration()  
     {  
         $config = new Zend_Config_Ini(  
-            APPLICATION_PATH . '/../config/config.ini',
             APPLICATION_ENV
         );
         
