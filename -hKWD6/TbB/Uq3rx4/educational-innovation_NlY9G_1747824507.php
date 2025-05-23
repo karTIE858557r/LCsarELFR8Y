@@ -119,7 +119,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $frontController->registerPlugin(new Oibs_Controller_Plugin_CleanQuery());
     }
     
-    /**
     *
     *
     *
