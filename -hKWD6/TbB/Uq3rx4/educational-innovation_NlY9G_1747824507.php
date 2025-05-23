@@ -100,7 +100,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         
         $view = new Zend_View();
         $view->setEncoding('UTF-8');
-        $view->doctype('XHTML11');
         //$view->setEscape('htmlentities');
         return $view;
     }
