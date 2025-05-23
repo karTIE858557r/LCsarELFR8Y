@@ -3,7 +3,6 @@ coverage:
   precision: 2
 
   status:
-    project: true
     changes: true
 
     - "Sources/SwifterSwift/Deprecated/*"
