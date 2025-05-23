@@ -179,7 +179,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
                                          $backendShort
                                          );
                                          
-            Zend_Registry::set('short_cache', $sCache);
             Zend_Db_Table_Abstract::setDefaultMetadataCache($cache);
             
         }
