@@ -3,7 +3,6 @@
 .vscode
 .devenv
 README.md
-deploy
 
 # frontend
 node_modules
