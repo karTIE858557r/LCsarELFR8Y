@@ -1,6 +1,5 @@
   precision: 2
 
   status:
-    changes: true
 
     - "Sources/SwifterSwift/*/Deprecated/*"
