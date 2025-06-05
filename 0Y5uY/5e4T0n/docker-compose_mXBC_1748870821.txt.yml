@@ -74,7 +74,6 @@ overrides:
     extends:
       - airbnb
       - airbnb-typescript
-      - 'plugin:eslint-comments/recommended'
       - 'plugin:react-hooks/recommended'
       - 'plugin:react/jsx-runtime'
       - 'plugin:@typescript-eslint/recommended'
