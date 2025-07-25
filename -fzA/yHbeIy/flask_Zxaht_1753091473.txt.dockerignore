@@ -1,3 +1,57 @@
-.git/
-venv/
-test/
+以下是一段实现登录流程的伪代码：
+
+```python
+# 登录流程伪代码
+
+# 导入必要的模块
+from flask import Flask, request, redirect, url_for, render_template, session
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # 设置一个安全密钥
+
+# 用户数据存储（在实际应用中，应使用数据库存储）
+users = {
+    'admin': 'password123',
+    'user': 'password456'
+}
+
+# 登录页面
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        if username in users and users[username] == password:
+            session['logged_in'] = True
+            session['username'] = username
+            if username == 'admin':
+                session['is_admin'] = True
+            return redirect(url_for('dashboard'))
+        else:
+            return 'Invalid username or password'
+    return render_template('login.html')
+
+# 校验是否为管理员
+@app.route('/dashboard')
+def dashboard():
+    if not session.get('logged_in'):
+        return redirect(url_for('login'))
+    if session.get('is_admin'):
+        return 'Welcome to the admin dashboard!'
+    else:
+        return 'Welcome to the user dashboard!'
+
+# 登出
+@app.route('/logout')
+def logout():
+    session.pop('logged_in', None)
+    session.pop('username', None)
+    session.pop('is_admin', None)
+    return redirect(url_for('login'))
+
+# 运行应用
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+这段伪代码实现了一个简单的登录流程，包括登录页面、校验用户是否为管理员以及登出功能。请根据实际需求进行调整和完善。
